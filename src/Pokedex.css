@@ -1,0 +1,38 @@
+
+body {
+    width: 960px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+li {
+    list-style: none;
+}
+
+.grid-item {
+    max-width: 192px;
+    text-align: center;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: black;
+    padding: 20px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    max-width: 152px;
+
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
