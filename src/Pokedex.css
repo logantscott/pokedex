@@ -1,12 +1,17 @@
 
 body {
-    width: 960px;
+    min-width: 480px;
+    max-width: 960px;
     margin: 0 auto !important;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+ul {
+    padding: 0;
 }
 
 li {
@@ -16,13 +21,13 @@ li {
 }
 
 .grid-item {
-    max-width: 192px;
+    /* max-width: 240px; */
     text-align: center;
     overflow: auto;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     color: black;
-    padding: 20px;
+    padding: 8px;
     font-size: 16px;
     overflow: hidden;
 }
@@ -34,6 +39,7 @@ li {
 
 h3 {
     margin: 0;
+    text-transform: capitalize;
 }
 
 p {
@@ -49,4 +55,29 @@ p {
     margin: 0 1px;
     padding: 0 3px;
     line-height: 12px;
+}
+
+table {
+    margin-top:10px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #333;
+    width: 100%;
+    font-size: 11px;
+}
+
+table th {
+    border: 1px solid #333;
+    width: 16%;
+    font-weight: normal;
+}
+
+table td {
+    border: 1px solid #333;
+    width: 16%;
+}
+
+span.bodydetail {
+    color: black;
 }
