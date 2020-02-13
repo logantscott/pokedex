@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PokeItem.js correctly 1`] = `
+<li
+  className="grid-item"
+>
+  <img />
+  <h3 />
+  <p>
+    Type 1:  
+  </p>
+  <p>
+    Type 2:  
+  </p>
+</li>
+`;
