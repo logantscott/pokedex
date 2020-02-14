@@ -25,7 +25,7 @@ li {
     text-align: center;
     overflow: auto;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
     /* color: black; */
     padding: 8px;
     font-size: 16px;
@@ -70,6 +70,7 @@ table {
 
 table th {
     border: 1px solid #333;
+    /* background: white; */
     width: 16%;
     font-weight: normal;
 }

@@ -26,7 +26,7 @@ export default class App extends Component {
   // https://alchemy-pokedex.herokuapp.com
 
   async componentDidMount() {
-    window.location.hash = '';
+    window.location.hash = 'sort=id';
 
     await this.loadPokedex();
 

@@ -55,7 +55,7 @@ export default class Search extends Component {
           <input type="text" name="search" className="searchtext" onChange={this.handleTextUpdate} onKeyDown={this.handleEnter}>
           </input>
           <button name="search" onClick={this.handleSearch} value={this.state.searchString}>Search</button>
-          <select defaultValue={this.state.perPage} onChange={this.handlePerPage} value={this.state.perPage}>
+          <select onChange={this.handlePerPage} value={this.state.perPage}>
             <option value="8">8</option>
             <option value="20">20</option>
             <option value="40">40</option>
