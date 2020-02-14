@@ -5,11 +5,14 @@ export default class PokeItem extends Component {
   render() {
     return (
       <li className="grid-item" style={{borderColor:this.props.pokemon.color_1}}>
-            <h3>{this.props.pokemon.pokemon}</h3>
+            <div className="itemHeader">
+                <h3>{this.props.pokemon.pokemon}</h3>
+                <h3>#{ String(this.props.pokemon.id.toString()).padStart(3, '0') }</h3>
+            </div>
             <img src={this.props.pokemon.url_image} alt={this.props.pokemon.pokemon} />
             <p>
                 <span className="bodydetail">
-                    height: {this.props.pokemon.height}
+                    height: {(this.props.pokemon.height /10).toFixed(1)} m
                 </span>
                 <span className="bodydetail">
                     weight: {(this.props.pokemon.weight / 10).toFixed(1)} kg
